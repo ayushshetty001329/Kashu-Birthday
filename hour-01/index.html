@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouquet 01 · The Beginning</title>
+  <link rel="stylesheet" href="../shared.css">
+</head>
+<body class="b1">
+  <div class="ambient"></div><div class="petals" aria-hidden="true"></div>
+  <main class="page">
+    <div class="eyebrow">BOUQUET 01 · THE BEGINNING</div>
+    <div class="hour">HOUR ONE</div>
+    <h1>Before there was <em>us</em>…</h1>
+    <p class="intro">One little memory. One little moment. And the beginning of everything.</p>
+
+    <button class="envelope-wrap" id="open" aria-label="Open the first bouquet">
+      <div class="envelope">
+        <div class="envelope-back"></div><div class="letter-card"></div><div class="flap"></div><div class="envelope-front"></div>
+        <div class="seal">♥</div>
+      </div>
+      <span>tap to open your first bouquet</span>
+    </button>
+
+    <section class="reveal" id="reveal" aria-live="polite">
+      <div class="memory-label">THE FIRST TIME I SAW YOU</div>
+      <div class="photo-frame"><img src="../assets/bouquet-01.jpg" alt="A memory of us"></div>
+      <div class="caption">I didn't know it then… but I was looking at the girl who would become my Kashu. ♡</div>
+      <article class="letter">
+        <p>Babe,</p>
+        <p>This is my first birthday with you, and today I want to spend every hour reminding you how much I love you. ❤️</p>
+        <p>So for our first hour, let's go all the way back to the beginning.</p>
+        <p>I still remember the first time I saw you on that scooty. I was literally drenched in sweat, looking absolutely finished… but somehow, your beauty still managed to distract me completely. 😂❤️</p>
+        <p>I don't know what it was about that moment, but I remember feeling something.</p>
+        <p>Maybe it really was love at first sight. ❤️</p>
+        <p>Because little did I know that the girl I noticed that day would become my Kashu, my favourite person, and the person I love the most. ♡</p>
+        <p>And this is only the beginning…<br>There are still so many pieces of our story I want to tell you.</p>
+        <div class="signature">— Ayush ♡</div>
+      </article>
+      <div class="closing">Keep this memory close.<br><span>There are 23 more pieces of our story.</span></div>
+    </section>
+  </main>
+<script>
+const btn=document.getElementById('open'), reveal=document.getElementById('reveal');
+btn.addEventListener('click',()=>{btn.classList.add('opened');setTimeout(()=>reveal.classList.add('show'),1050);setTimeout(()=>document.querySelector('.photo-frame')?.scrollIntoView({behavior:'smooth',block:'center'}),1300)});
+const petals=document.querySelector('.petals'); for(let i=0;i<22;i++){const p=document.createElement('span');p.textContent='♥';p.style.left=Math.random()*100+'%';p.style.animationDelay=(-Math.random()*12)+'s';p.style.animationDuration=(8+Math.random()*8)+'s';petals.appendChild(p)}
+</script>
+</body></html>

@@ -1,0 +1,55 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hour 5 — Our First Proper Memory Together</title><style>
+
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Georgia,'Times New Roman',serif}
+body{background:#24151b;color:#fff4ef}
+button{font:inherit}
+.page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;overflow:hidden;position:relative}
+.card{width:min(560px,100%);min-height:calc(100vh - 48px);border-radius:30px;position:relative;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,.45)}
+.kicker{font:600 11px/1.4 Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase}
+h1{font-size:clamp(38px,9vw,68px);line-height:.95;margin:16px 0}
+.subtitle{font-size:18px;line-height:1.6;opacity:.9}
+.btn{border:0;border-radius:999px;padding:13px 20px;cursor:pointer;letter-spacing:.03em;box-shadow:0 8px 25px rgba(0,0,0,.18)}
+.hidden{display:none!important}
+.reveal{animation:rise .7s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+@media(max-width:600px){.page{padding:12px}.card{min-height:calc(100vh - 24px);border-radius:24px}}
+
+body{background:linear-gradient(150deg,#9bb4c7,#e6c9b1 55%,#614a4b)}
+.card{background:linear-gradient(160deg,rgba(25,52,68,.96),rgba(90,54,55,.97));padding:30px 22px;color:#fff6ef}
+.kicker{color:#f3c9ae}h1{font-family:Georgia,serif;font-size:clamp(40px,10vw,70px);color:#fff4ea}
+.subtitle{color:#f2ddd2}.travel{display:flex;justify-content:center;gap:10px;font:600 11px Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#e9bda6;margin:12px}
+.ticket{border:1px dashed rgba(255,255,255,.45);padding:10px 14px;border-radius:12px;display:inline-block}
+.video{margin:25px auto;max-width:460px;background:#0c1419;border-radius:24px;padding:9px;box-shadow:0 18px 45px rgba(0,0,0,.35)}
+video{width:100%;display:block;border-radius:18px;max-height:54vh;object-fit:contain;background:#000}
+.reveal-btn{display:block;margin:18px auto;background:#e2a788;color:#382327;border:0;border-radius:999px;padding:13px 22px;cursor:pointer;font-weight:bold}
+.photo{background:#f8f0e8;padding:11px 11px 18px;max-width:440px;margin:30px auto;transform:rotate(-1deg);box-shadow:0 18px 45px rgba(0,0,0,.3)}
+.photo img{display:block;width:100%;height:auto;object-fit:contain}.caption{color:#54363a;text-align:center;font:600 14px Arial,sans-serif;margin-top:12px}
+.letter{background:rgba(255,255,255,.09);border-radius:24px;padding:25px 21px;line-height:1.9;font-size:17px;border:1px solid rgba(255,255,255,.13)}
+.highlight{color:#ffd1b8;font-size:25px;text-align:center;font-weight:bold;line-height:1.25}
+.route{display:flex;justify-content:space-between;align-items:center;margin:25px 0;font:600 11px Arial,sans-serif;letter-spacing:.08em;color:#efc6b1}
+.line{height:1px;background:rgba(255,255,255,.35);flex:1;margin:0 10px}
+</style></head><body><main class="page"><section class="card">
+<div class="travel"><span class="ticket">HOUR 05</span><span class="ticket">ALIBAG</span></div>
+<div class="center"><div class="kicker">Our First Proper Memory Together</div><h1>One Night.<br>So Many Firsts.</h1><div class="subtitle">A little trip that became a huge piece of our story.</div></div>
+<div class="route"><span>MUMBAI</span><span class="line"></span><span>ALIBAG</span></div>
+<div class="video"><video controls playsinline preload="metadata"><source src="assets/E25CDE50-D51A-49E4-ADB0-9EE7CB02D110(2).mp4" type="video/mp4"></video></div>
+<button class="reveal-btn" id="open">Open the memory postcard →</button>
+<div id="story" class="hidden reveal">
+<div class="photo"><img src="assets/IMG_7332(2).jpeg" alt="Ayush and Kashu"><div class="caption">Our first proper memory together. ❤️</div></div>
+<article class="letter">
+<p>I think this is one of the best days of our life.</p>
+<p>We went to <b>Alibag</b> with Pranav and Shreya, and somehow everything about that day felt special.</p>
+<p>Water sports. Car rides. Laughing. Exploring. Being together.</p>
+<p>But what made it special for me wasn't just where we went.</p>
+<p>It was that this was our <b>first night out</b>. Our first proper little adventure. Our first time getting to bond like that.</p>
+<p>There was something about being away from everything and just enjoying the day together that made me realise how much I loved having you beside me.</p>
+<div class="highlight">It wasn't just an Alibag trip.<br>It became one of my favourite chapters of us. ❤️</div>
+<p>And if I could go back to that day, I wouldn't change a thing.</p>
+<p>I'd just want one more night, one more ride, one more laugh… with you.</p>
+<p style="text-align:right">— Ayush ♡</p>
+</article></div>
+</section></main><script>
+document.getElementById('open').onclick=()=>{const s=document.getElementById('story');s.classList.remove('hidden');document.getElementById('open').textContent='❤️ Keep this memory';s.scrollIntoView({behavior:'smooth',block:'start'})};
+</script></body></html>

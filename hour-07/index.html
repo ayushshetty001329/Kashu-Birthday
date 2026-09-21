@@ -1,0 +1,36 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hour 7 · Our Stupid Little World</title><style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:#111;color:#fff;font-family:system-ui,-apple-system,Segoe UI,sans-serif;display:grid;place-items:center;overflow-x:hidden}.wrap{width:min(100%,760px);min-height:100vh;background:radial-gradient(circle at 20% 10%,#3a245f 0 12%,transparent 35%),linear-gradient(160deg,#15151d,#0d0d12);padding:24px}.top{display:flex;justify-content:space-between;color:#aaa;font-size:12px;letter-spacing:2px}.game{margin-top:35px;border:1px solid #3f3f50;border-radius:28px;padding:26px;box-shadow:0 25px 70px #0008}.warning{font-size:13px;color:#f6b7d1;letter-spacing:3px;text-transform:uppercase}.title{font-size:clamp(38px,8vw,72px);line-height:.95;margin:14px 0}.subtitle{color:#b9b9c8}.players{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0}.player{background:#1d1d27;border-radius:16px;padding:14px}.player b{display:block;color:#f7a9c8;margin-bottom:4px}.screen{position:relative;border-radius:20px;overflow:hidden;background:#000}.screen img,.screen video{display:block;width:100%;max-height:58vh;object-fit:contain;background:#000}.screen video{display:none}.btn{margin:16px 0 0;border:0;border-radius:999px;background:#f6a8c6;color:#21121b;padding:13px 20px;font-weight:800;cursor:pointer}.letter{display:none;margin-top:22px;white-space:pre-line;line-height:1.8;color:#eee}.end{margin-top:24px;padding:22px;border:1px dashed #555;border-radius:18px;color:#f7b2cd;font-size:22px;text-align:center}.emoji{position:fixed;pointer-events:none;animation:float 2.8s linear forwards}@keyframes float{to{transform:translateY(-100vh) rotate(360deg);opacity:0}}
+</style></head><body><main class="wrap"><div class="top"><span>BOUQUET 07</span><span>PLAYER 1 · PLAYER 2</span></div><section class="game"><div class="warning">⚠ Two adults have entered their childish era.</div><h1 class="title">Our stupid,<br>little world.</h1><p class="subtitle">UNSERIOUSLY IN LOVE · CO-OP MODE</p><div class="players"><div class="player"><b>PLAYER 1</b>Ayush</div><div class="player"><b>PLAYER 2</b>Kashu ❤️</div></div><div class="screen"><img id="poster" src="assets/hour7.jpg" alt="Our memory"><video id="vid" controls playsinline src="assets/hour7.mp4"></video></div><button class="btn" onclick="startMemory()">▶ Start the memory</button><div id="letter" class="letter">You know what I love about us?
+
+I can be completely childish with you. 😂❤️
+
+I don't always have to be serious. I don't always have to have everything figured out.
+
+Sometimes I just want to be stupid with you.
+
+Watching movies together.
+Going out for absolutely no reason.
+Playing PS together.
+Annoying each other.
+Laughing at the most stupid things.
+
+And somehow, those are some of my favourite moments with you.
+
+Because with you, I get to be just me.
+
+I love that we can turn the smallest things into memories.
+
+A random movie becomes our movie. A random outing becomes a story we'll remember. A PS game becomes an unnecessary competition where neither of us wants to lose. 😂
+
+And sometimes we don't even need to do anything.
+
+Just being together, being stupid, laughing and talking about nonsense… that's enough for me.
+
+You're not just the person I love.
+You're the person I can be a kid with. ❤️
+
+And I hope we never grow out of that.
+
+Because when we're old and annoying each other for the hundredth time, I still want to be sitting next to you saying…
+
+“ONE MORE GAME?” 😂🎮</div><div class="end">We don't need extraordinary days.<br><b>Give me ordinary days with you.</b> ❤️</div></section></main><script>function startMemory(){document.getElementById('poster').style.display='none';const v=document.getElementById('vid');v.style.display='block';document.getElementById('letter').style.display='block';for(let i=0;i<16;i++){let s=document.createElement('span');s.className='emoji';s.textContent=['🎮','😂','❤️','🍿'][i%4];s.style.left=Math.random()*100+'vw';s.style.bottom='0';s.style.fontSize=(16+Math.random()*18)+'px';document.body.appendChild(s);setTimeout(()=>s.remove(),3000)}};</script></body></html>

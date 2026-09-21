@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouquet 02 · The Beginning We Didn't Know Was Beginning</title>
+  <link rel="stylesheet" href="../shared.css">
+</head>
+<body class="b2">
+  <div class="grain"></div><div class="petals" aria-hidden="true"></div>
+  <main class="page film-page">
+    <div class="eyebrow">BOUQUET 02 · THE BEGINNING WE DIDN'T KNOW WAS BEGINNING</div>
+    <div class="hour">HOUR TWO</div>
+    <h1>Somewhere between a <em>shawarma</em> and a conversation…</h1>
+    <p class="intro">something quietly started becoming us.</p>
+
+    <section class="film-card">
+      <div class="sprocket top"></div><div class="sprocket bottom"></div>
+      <div class="film-title">OUR FIRST LITTLE CHAPTER</div>
+      <div class="video-shell">
+        <video id="memoryVideo" src="../assets/bouquet-02.mp4" playsinline preload="metadata"></video>
+        <button class="play" id="play" aria-label="Play our memory">▶</button>
+        <div class="film-line">A MEMORY FROM THE BEGINNING</div>
+      </div>
+      <div class="controls"><span>02</span><span>PLAY OUR MEMORY</span><span>∞</span></div>
+    </section>
+
+    <section class="letter reveal2" id="letter">
+      <p>Babe,</p>
+      <p>I still think about how simple our first meeting was. Just you, me, a shawarma, and two people slowly getting to know each other. ❤️</p>
+      <p>We didn't know it then… but somewhere between those little conversations, the laughs, and those simple moments, something was quietly beginning.</p>
+      <p>I wasn't thinking about where it would lead.<br>I was just enjoying being around you.</p>
+      <p>And somehow, without either of us realizing it, those little moments became the beginning of us. ❤️</p>
+      <p>Looking back now, it's crazy to think that one simple day would eventually lead me to my favourite person.</p>
+      <p><strong>And honestly… I'd choose that first meeting all over again.</strong></p>
+      <p>Still falling for you,<br><span class="signature">Ayush ♡</span></p>
+    </section>
+    <div class="closing">Chapter two.<br><span>Another little piece of us, kept just for you.</span></div>
+  </main>
+<script>
+const v=document.getElementById('memoryVideo'), play=document.getElementById('play'), letter=document.getElementById('letter');
+play.addEventListener('click',()=>{v.play();play.classList.add('hide');});
+v.addEventListener('ended',()=>letter.classList.add('show'));
+v.addEventListener('click',()=>{if(v.paused){v.play();play.classList.add('hide')}else v.pause()});
+const petals=document.querySelector('.petals'); for(let i=0;i<16;i++){const p=document.createElement('span');p.textContent='✦';p.style.left=Math.random()*100+'%';p.style.animationDelay=(-Math.random()*12)+'s';p.style.animationDuration=(9+Math.random()*9)+'s';petals.appendChild(p)}
+</script>
+</body></html>

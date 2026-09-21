@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hour 18 — The Things I’m Sorry For</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Parisienne&display=swap');
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at top,#fff8f2 0,#f8e9e4 45%,#ead1d1 100%);color:#4b2630;font-family:'Cormorant Garamond',Georgia,serif}
+.page{max-width:850px;margin:auto;padding:28px 18px 70px}
+.top{text-align:center;min-height:72vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.hour{font-size:14px;letter-spacing:4px;text-transform:uppercase;opacity:.7}
+.envelope{font-size:58px;margin:22px 0 8px;filter:drop-shadow(0 8px 12px #9a5a6a33)}
+h1{font-size:clamp(42px,8vw,76px);font-weight:500;line-height:.95;margin:8px 0 18px}
+.subtitle{font-family:Parisienne,cursive;font-size:28px;margin:0;opacity:.82}
+.open{margin-top:34px;padding:13px 25px;border:1px solid #8f5664;border-radius:999px;background:#fffaf6;color:#5b2b36;font:600 14px Georgia;letter-spacing:2px;cursor:pointer;box-shadow:0 8px 25px #6e3c4a22}
+.open:hover{transform:translateY(-2px)}
+.letter{background:#fffdf8;border:1px solid #dfc8b8;border-radius:4px;padding:clamp(28px,6vw,65px);box-shadow:0 20px 60px #623a4020;position:relative}
+.letter:before{content:"";position:absolute;inset:10px;border:1px dashed #d7b8ad;pointer-events:none}
+.para,.promise{position:relative;font-size:clamp(19px,2.6vw,23px);line-height:1.55;margin:0 0 20px}
+.promise{font-weight:700;font-size:clamp(23px,3.4vw,31px);color:#752f40;margin-top:30px}
+.letter .para:first-child,.letter .promise:first-child{font-family:Parisienne,cursive;font-size:42px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;margin:30px 0 42px}
+figure{margin:0;background:#fff;border:9px solid #fff;box-shadow:0 12px 28px #4c293222;transform:rotate(-1deg);padding-bottom:5px}
+figure:nth-child(2){transform:rotate(1.2deg)}
+figure img{display:block;width:100%;height:auto;max-height:600px;object-fit:contain;background:#f8f2ee}
+.quiet{text-align:center;padding:65px 20px;font-size:clamp(23px,4vw,34px);line-height:1.35}
+.quiet strong{display:block;color:#6f2b3d}
+.promise-mark{font-family:Parisienne,cursive;font-size:36px;margin-top:30px}
+.back{display:block;text-align:center;margin-top:24px;color:#6f3a47;text-decoration:none}
+.petals{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:-1}
+.petal{position:absolute;font-size:18px;opacity:.25;animation:fall linear infinite}
+@keyframes fall{from{transform:translateY(-10vh) rotate(0)}to{transform:translateY(110vh) rotate(360deg)}}
+@media(max-width:600px){.top{min-height:65vh}.letter{padding:30px 22px}.letter:before{inset:6px}.gallery{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="petals">
+<span class="petal" style="left:8%;animation-duration:12s;animation-delay:-3s">♡</span>
+<span class="petal" style="left:28%;animation-duration:16s;animation-delay:-8s">✦</span>
+<span class="petal" style="left:54%;animation-duration:13s;animation-delay:-5s">♡</span>
+<span class="petal" style="left:77%;animation-duration:18s;animation-delay:-11s">✦</span>
+<span class="petal" style="left:91%;animation-duration:15s;animation-delay:-7s">♡</span>
+</div>
+<main class="page">
+<section class="top">
+<div class="hour">18 / 24</div>
+<div class="envelope">✉️</div>
+<h1>The Things I’m Sorry For</h1>
+<p class="subtitle">A letter from the most honest part of me.</p>
+<button class="open" onclick="document.getElementById('letter').scrollIntoView({behavior:'smooth'})">OPEN LETTER</button>
+</section>
+<div id="letter">
+<section class="gallery"><figure><img src="IMG_8755(1).jpeg" alt="A memory of Kashu"></figure><figure><img src="IMG_8754(1).jpeg" alt="A memory of Kashu"></figure></section>
+<section class="letter">
+<p class="promise">Babe,</p><p class="para">As I&#x27;m writing this letter, I&#x27;m getting more and more emotional.</p><p class="para">Because I&#x27;m thinking about all the moments we&#x27;ve shared — the silly ones, the beautiful ones, the difficult ones, and all the little memories that somehow became so important to me.</p><p class="para">And I know I&#x27;ll probably get even more emotional as I move forward through these hours, because every one of them is a piece of us.</p><p class="promise">But there&#x27;s something I want you to know.</p><p class="promise">I always want to see you smile.</p><p class="promise">Please don&#x27;t cry because of me. ❤️</p><p class="para">I know I&#x27;m not always the boy you wished I would be.</p><p class="para">Sometimes I&#x27;m not as supportive as I should be. Sometimes I don&#x27;t reassure you enough. Sometimes I don&#x27;t show you how much I care. Sometimes I do stupid things, say the wrong things, or simply don&#x27;t realise what you need from me.</p><p class="promise">And I&#x27;m sorry for all of that, babe.</p><p class="para">I&#x27;m sorry for the moments when I made you feel like you weren&#x27;t understood, appreciated, or loved enough.</p><p class="para">I&#x27;m not going to pretend I&#x27;m perfect. I&#x27;m not.</p><p class="para">But I want you to know that I see the things I need to change. And I genuinely want to become better — not just by saying it, but by showing you.</p><p class="para">You deserve someone who listens. Someone who reassures you. Someone who stands beside you and makes you feel loved, even in the smallest moments.</p><p class="promise">And I want to become that person for you.</p><p class="para">So if I&#x27;ve ever made your heart heavy when all I wanted was to make it happy… I&#x27;m sorry.</p><p class="para">Thank you for staying through the imperfect version of me.</p><p class="promise">And I promise I&#x27;ll keep working on myself, because you mean far too much to me to stop trying.</p><p class="promise">Just keep smiling, Kashu. ❤️</p><p class="para">Because your smile is still one of my favourite things in this world.</p><p class="promise">I&#x27;m sorry. I&#x27;m learning. I&#x27;m trying. And I love you.</p><p class="para">— Ayush ❤️</p>
+</section>
+<section class="quiet"><strong>All I want is for you to keep smiling, babe. ❤️</strong></section>
+</div>
+<a class="back" href="../">← Back to Hour 17</a>
+</main>
+</body>
+</html>

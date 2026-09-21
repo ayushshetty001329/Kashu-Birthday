@@ -1,0 +1,55 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Hour 15 · Everyone's Favourite</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#210a16;color:#fff8f5}
+body{font-family:Georgia,"Times New Roman",serif}.page{min-height:100vh;padding:18px;display:flex;justify-content:center;align-items:center;
+background:radial-gradient(circle at 50% 12%,rgba(239,178,198,.24),transparent 34%),linear-gradient(145deg,#190711,#57162f 55%,#220913)}
+.card{width:min(820px,100%);min-height:calc(100vh - 36px);border:1px solid #ffffff2b;border-radius:30px;background:#fff9f40b;
+backdrop-filter:blur(12px);padding:28px 18px 34px;box-shadow:0 28px 90px #0008}.kicker{text-align:center;font:600 10px Arial,sans-serif;
+letter-spacing:3px;color:#efbdcf;text-transform:uppercase}h1{text-align:center;font-size:clamp(42px,9vw,76px);line-height:.98;font-weight:400;margin:18px 0 8px}
+h1 span{color:#efa9bd}.date{text-align:center;color:#e5ba9d;font:600 11px Arial,sans-serif;letter-spacing:2px}.open{text-align:center;margin:26px 0}
+button{border:1px solid #ffffff55;background:#ffffff12;color:white;border-radius:999px;padding:13px 24px;font-weight:700;cursor:pointer}
+.story{display:none;animation:rise .8s ease}@keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.note{background:#fff9f3;color:#38202a;border-radius:20px;padding:24px;line-height:1.78;font-size:17px;box-shadow:0 20px 45px #0005}
+.note h2{text-align:center;color:#76213e;font-weight:400;margin:0 0 15px}.note p{margin:0 0 13px}
+.quote{text-align:center;color:#76213e;font-size:23px;line-height:1.45;font-style:italic;margin:22px 0}
+footer{text-align:center;color:#ffffff55;font:9px Arial,sans-serif;letter-spacing:2px;margin-top:24px}
+img{display:block;width:100%;height:auto;object-fit:contain}.photo{background:#fff;padding:8px;box-shadow:0 16px 40px #0006}
+@media(max-width:560px){.note{font-size:16px;padding:20px}}
+
+.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0}
+.photos .photo:nth-child(1){transform:rotate(-2deg)}.photos .photo:nth-child(2){margin-top:20px;transform:rotate(1deg)}.photos .photo:nth-child(3){transform:rotate(-1deg)}
+@media(max-width:600px){.photos{grid-template-columns:1fr}.photos .photo:nth-child(2){margin-top:0}}
+</style></head><body><div class="page"><main class="card">
+
+<div class="kicker">For Kashu · From Ayush</div>
+<h1>Things I Love<br><span>About You</span></h1><div class="date">EVERYONE'S FAVOURITE · HOUR 15</div>
+<div class="open"><button id="open">A little something I've noticed about you ❤️</button></div>
+<section class="story" id="story">
+<div class="quote"><strong>You're everyone's favourite. ❤️</strong><br><small>And I completely understand why.</small></div>
+<div class="photos">
+<div class="photo"><img src="assets/90504fad-442a-471e-8a84-d575fee65238.jpeg"></div>
+<div class="photo"><img src="assets/356e439b-a3b0-469a-8432-29cfd0332e88.jpeg"></div>
+<div class="photo"><img src="assets/66cc5ccb-a610-4481-bd6e-169f5191670e.jpeg"></div>
+</div>
+<div class="note"><h2>Things I Love About You</h2>
+<p>You know one thing I've noticed about you?</p>
+<p><strong>You're everyone's favourite. ❤️</strong></p>
+<p>Somehow, wherever you go, people want to be around you.</p>
+<p>Everyone wants to hang out with you. Everyone wants to spend time with you.</p>
+<p>You're funny. 😂 You're fun-loving. You make people comfortable and bring a different kind of energy wherever you go.</p>
+<p>You can turn a normal day into something fun just by being there.</p>
+<p>I love seeing you with your friends. I love seeing how easily you make people smile. I love seeing how much people enjoy having you around.</p>
+<p>But there's one thing that makes me especially happy…</p>
+<p><strong>I get to be your person too. ❤️</strong></p>
+<p>Keep being the funny, crazy, loving, fun girl that everyone wants around.</p>
+<p>Because that's the girl I fell for.</p>
+<div class="quote">The girl everyone loves…<br><strong>and the girl I love the most. ❤️</strong></div>
+<p style="text-align:right;font-style:italic">— Ayush</p></div>
+<div class="quote"><strong>FUNNY · LOVING · CRAZY · FUN · JUST KASHU ❤️</strong></div>
+</section><footer>24 HOURS OF US · BOUQUET 15</footer>
+</main></div>
+<script>
+const btn=document.getElementById('open'), story=document.getElementById('story');
+btn.onclick=()=>{btn.style.display='none';story.style.display='block';window.scrollTo({top:0,behavior:'smooth'})};
+</script></body></html>

@@ -1,14 +1,14 @@
-# Kashu Birthday — 24 Hours of Love
+# Kashu — 24 Hours of Love ❤️
 
-A handmade React/Vite birthday experience for Kashu. Bouquet 01 and Bouquet 02 are implemented as the first two chapters; the app is designed to grow to all 24 bouquets without rebuilding the site.
+A 24-hour birthday journey for Kashu, from Ayush.
 
-## GitHub Pages
+## Deployment
+This is a static website. Upload the contents of this folder to the `main` branch of the GitHub repository and enable GitHub Pages using **GitHub Actions** or **Deploy from a branch**.
 
-Repository: `ayushshetty001329/Kashu-Birthday`
+Expected Pages URLs:
+- Main: `/Kashu-Birthday/`
+- Hour 1: `/Kashu-Birthday/hour-01/`
+- ...
+- Hour 24: `/Kashu-Birthday/hour-24/`
 
-The Vite base path is already configured for that repository. After pushing to `main`, enable **Settings → Pages → GitHub Actions** if GitHub asks for a Pages source.
-
-## Media
-
-- `public/media/bouquet-01.jpg` is the original Bouquet #1 photo.
-- `public/media/bouquet-02.mp4` is the current Bouquet #2 video asset. Replace this file with the intended original video if needed; the UI will continue to use the exact file without AI processing.
+All supplied photos/videos are used as provided. No AI-generated/recreated personal media is included.

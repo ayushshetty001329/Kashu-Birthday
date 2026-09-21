@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Why I Choose You</title>
+<style>
+*{box-sizing:border-box} html,body{margin:0;background:#220d18;color:#fff8f4;font-family:Georgia,"Times New Roman",serif}
+body{min-height:100vh} .page{min-height:100vh;padding:18px;display:flex;justify-content:center;align-items:center;background:radial-gradient(circle at 50% 15%,rgba(231,155,181,.22),transparent 32%),linear-gradient(145deg,#1d0913,#51152d 55%,#230b17)}
+.card{width:min(780px,100%);min-height:calc(100vh - 36px);border:1px solid rgba(255,255,255,.16);border-radius:28px;background:rgba(255,248,244,.055);backdrop-filter:blur(12px);padding:28px 18px 32px;box-shadow:0 25px 80px #0007;text-align:center;overflow:hidden}
+.kicker{font:600 11px Arial,sans-serif;letter-spacing:3px;color:#efbdcf;text-transform:uppercase}
+h1{font-size:clamp(42px,8vw,70px);font-weight:400;line-height:1;margin:18px 0 8px} h1 i{color:#efa9bd} .sub{color:#e2b275;font:600 12px Arial,sans-serif;letter-spacing:2px}
+button{margin:25px 0 8px;padding:13px 23px;border:1px solid #ffffff55;background:#ffffff12;color:white;border-radius:999px;font-weight:700;cursor:pointer}
+.story{display:none;max-width:650px;margin:0 auto;text-align:left;animation:in .8s ease} @keyframes in{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:22px 0} .photo{background:#fff;padding:7px;box-shadow:0 15px 35px #0006;transform:rotate(-1deg)} .photo:nth-child(2){transform:rotate(1deg)} .photo img{display:block;width:100%;height:auto;object-fit:contain}
+.note{background:#fff8f2;color:#38202a;border-radius:18px;padding:24px;line-height:1.75;font-size:17px;box-shadow:0 15px 40px #0004} .note h2{color:#76213e;text-align:center;font-weight:400;margin:0 0 16px} .note p{margin:0 0 13px}
+.quote{text-align:center;font-size:22px;color:#76213e;margin:20px 0;font-style:italic}
+.end{text-align:center;color:#f0bfcc;margin-top:22px;font-size:21px} footer{margin-top:25px;color:#ffffff66;font:10px Arial,sans-serif;letter-spacing:2px}
+@media(max-width:500px){.gallery{grid-template-columns:1fr}.note{font-size:16px;padding:20px}}
+</style></head>
+<body><div class="page"><main class="card">
+<div class="kicker">For Kashu · From Ayush</div>
+<h1>Halfway There<br><i>Why I Choose You</i></h1>
+<div class="sub">THE REASONS · 12</div>
+<button id="open">Open this bouquet ❤️</button>
+<section class="story" id="story"><div class="gallery">
+<div class="photo"><img src="assets/IMG_8759(1).jpeg" alt="A memory of us"></div>
+<div class="photo"><img src="assets/IMG_8758(1).jpeg" alt="A memory of us"></div>
+</div>
+<div class="quote">SUPPORTER · CHEERLEADER · PILLOW · STRENGTH · COACH · ENGLISH TEACHER · LOVER</div>
+<div class="note"><h2>Why I Choose You</h2>
+<p>We're halfway through our 24 hours, and I think this is the perfect moment to tell you something simple.</p>
+<p><strong>I choose you because you are so much more than my lover.</strong> ❤️</p>
+<p>You are my supporter.</p>
+<p>My cheerleader.</p>
+<p>My pillow when I need somewhere to rest.</p>
+<p>My strength when I don't have enough of my own.</p>
+<p>My coach when I need a push.</p>
+<p>My English teacher when I say something completely wrong. 😂</p>
+<p>And somehow, through all of that, you are still the person I want to come back to at the end of the day.</p>
+<p>You make me want to become better — not because you ask me to be someone else, but because being loved by you makes me want to give you my best.</p>
+<p>So if anyone ever asks me why I chose you...</p>
+<div class="quote"><strong>Because with you, I don't just have a girlfriend.<br>I have my person.</strong> ❤️</div>
+<p style="text-align:right;font-style:italic">— Ayush ❤️</p></div></section>
+<footer>24 HOURS OF US · HOUR 12</footer>
+</main></div>
+<script>document.getElementById('open').onclick=()=>{document.getElementById('open').style.display='none';document.getElementById('story').style.display='block';window.scrollTo({top:0,behavior:'smooth'})}</script>
+</body></html>

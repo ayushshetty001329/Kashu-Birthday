@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hour 6 — The Moment You Became Mine</title>
+<style>
+:root{
+  --burgundy:#3b101d; --wine:#681b32; --rose:#d995a8; --cream:#fff8f2;
+  --gold:#d9b37b; --ink:#351b25;
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--burgundy);color:var(--cream);font-family:Georgia,"Times New Roman",serif}
+body{overflow-x:hidden}
+.page{
+  min-height:100vh; display:flex; justify-content:center; align-items:center;
+  padding:22px; position:relative; overflow:hidden;
+  background:
+    radial-gradient(circle at 50% 25%, rgba(218,151,169,.20), transparent 30%),
+    radial-gradient(circle at 15% 80%, rgba(255,220,185,.08), transparent 28%),
+    linear-gradient(145deg,#250b15,#4b1224 52%,#210811);
+}
+.glow{position:absolute;width:260px;height:260px;border-radius:50%;filter:blur(60px);background:rgba(220,145,165,.16);top:8%;left:50%;transform:translateX(-50%)}
+.card{
+  width:min(760px,100%); min-height:min(920px,calc(100vh - 44px));
+  border:1px solid rgba(255,230,220,.22); border-radius:30px;
+  background:rgba(255,248,242,.055); backdrop-filter:blur(12px);
+  box-shadow:0 25px 90px rgba(0,0,0,.35); position:relative; overflow:hidden;
+  display:flex; flex-direction:column; align-items:center; padding:34px 24px 42px;
+}
+.eyebrow{font:600 11px/1.5 Arial,sans-serif;letter-spacing:4px;text-transform:uppercase;color:#e8b8c6;text-align:center}
+.hour{font:italic 17px Georgia,serif;color:#f1c8d3;margin-top:22px}
+.title{font-size:clamp(38px,8vw,72px);line-height:.98;text-align:center;margin:12px 0 0;font-weight:400}
+.date{margin-top:18px;color:#e0b87f;font:600 13px Arial,sans-serif;letter-spacing:3px}
+.flower-wrap{height:150px;width:150px;margin:22px 0 8px;position:relative;display:grid;place-items:center}
+.flower{font-size:82px;filter:drop-shadow(0 10px 20px rgba(0,0,0,.3));transform:translateY(0);transition:.7s}
+.petal{position:absolute;font-size:18px;opacity:0;animation:fall 5s linear infinite}
+@keyframes fall{0%{transform:translateY(-30px) rotate(0);opacity:0}15%{opacity:.8}100%{transform:translateY(620px) rotate(280deg);opacity:0}}
+.p1{left:8%;animation-delay:.3s}.p2{left:28%;animation-delay:1.8s}.p3{left:67%;animation-delay:1s}.p4{left:84%;animation-delay:2.7s}
+.reveal{
+  border:1px solid rgba(255,225,215,.28);background:rgba(255,255,255,.08);
+  color:#fff7f3;border-radius:999px;padding:14px 25px;font:600 13px Arial,sans-serif;
+  letter-spacing:1.2px;cursor:pointer;transition:.25s;box-shadow:0 8px 25px rgba(0,0,0,.15)
+}
+.reveal:hover{transform:translateY(-2px);background:rgba(255,255,255,.13)}
+.story{display:none;width:min(620px,100%);animation:appear .9s ease forwards}
+@keyframes appear{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.photo-frame{margin:20px auto 26px;padding:11px;background:#fff8f0;box-shadow:0 18px 45px rgba(0,0,0,.28);transform:rotate(-1deg);width:min(520px,94%)}
+.photo-frame img{display:block;width:100%;height:auto;max-height:600px;object-fit:contain;background:#eee}
+.caption{text-align:center;color:#6b263b;font:italic 15px Georgia,serif;padding:10px 4px 3px}
+.letter{
+  background:rgba(255,248,242,.97);color:var(--ink);border-radius:20px;padding:28px 25px 30px;
+  box-shadow:0 18px 50px rgba(0,0,0,.24);line-height:1.75;font-size:17px;
+}
+.letter h2{margin:0 0 16px;text-align:center;color:#6b1d34;font-size:27px;font-weight:400}
+.letter p{margin:0 0 13px}
+.signature{text-align:right;font-style:italic;color:#7a2942;margin-top:20px}
+.final{display:none;text-align:center;margin-top:28px;animation:appear 1s ease forwards}
+.final .line1{font:600 11px Arial,sans-serif;letter-spacing:4px;color:#e6b7c5;text-transform:uppercase}
+.final .big{font-size:clamp(40px,9vw,68px);margin:12px 0;font-weight:400}
+.final .small{font-size:18px;color:#f2d8de}
+footer{margin-top:auto;padding-top:24px;color:rgba(255,232,228,.55);font:11px Arial,sans-serif;letter-spacing:2px;text-align:center}
+@media(max-width:520px){
+ .card{min-height:calc(100vh - 28px);padding:27px 15px 28px;border-radius:24px}
+ .page{padding:14px}
+ .flower-wrap{height:130px}.flower{font-size:70px}
+ .letter{font-size:16px;padding:23px 20px}
+ .title{font-size:44px}
+}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="glow"></div>
+<div class="card">
+  <div class="eyebrow">For Kashu · From Ayush</div>
+  <div class="hour">Hour Six</div>
+  <h1 class="title">The Moment<br><i>You Became Mine</i></h1>
+  <div class="date">23 · 02 · 2026 · OUR DAY</div>
+
+  <div class="flower-wrap" aria-hidden="true">
+    <div class="flower">🌹</div>
+    <span class="petal p1">🌸</span><span class="petal p2">🌹</span>
+    <span class="petal p3">🌸</span><span class="petal p4">🌹</span>
+  </div>
+
+  <button class="reveal" id="reveal">Open this memory 🌹</button>
+
+  <section class="story" id="story">
+    <div class="photo-frame">
+      <img src="assets/IMG_7469.jpeg" alt="Kashu holding the bouquet on 23 February 2026">
+      <div class="caption">“These flowers were always for you.”</div>
+    </div>
+
+    <div class="letter">
+      <h2>The Moment You Became Mine</h2>
+
+      <p>There was a moment when I finally stopped overthinking everything.</p>
+      <p>And I just knew.</p>
+      <p><strong>Babe, you are the one I want.</strong> ❤️</p>
+
+      <p>I don't know why I took so long to make that decision.</p>
+      <p>Maybe I was scared. Maybe I was thinking too much. Maybe I just needed time to understand what my heart already knew.</p>
+
+      <p>But when I finally chose you… <strong>it felt completely right.</strong></p>
+
+      <p>Because I've honestly never found anyone quite like you.</p>
+      <p>You're the cutest girl. You're the loveliest girl. You're the girl who somehow became so important to me that I couldn't imagine choosing anyone else.</p>
+
+      <p>And these flowers? 🌹</p>
+      <p>I gave them to you that day… but if I could, I'd give you flowers every single day.</p>
+
+      <p>Because you deserve to be reminded that you are loved.</p>
+
+      <p><strong>23rd February 2026.</strong><br>Our day.</p>
+
+      <p>The day I stopped wondering <i>“What if?”</i></p>
+      <p>And started saying:</p>
+
+      <p style="text-align:center;font-size:22px;color:#6b1d34"><strong>“It's you. It has always got to be you.” ❤️</strong></p>
+
+      <p>Kashish, I love you.</p>
+
+      <p>And if I had to make that decision all over again…</p>
+
+      <p style="text-align:center;font-size:22px;color:#6b1d34"><strong>I'd choose you. Every single time. ❤️</strong></p>
+
+      <div class="signature">— Ayush ❤️</div>
+    </div>
+
+    <div class="final" id="final">
+      <div class="line1">23 · 02 · 2026</div>
+      <div class="big">I chose you.</div>
+      <div class="small">And I'd choose you again.<br>Every. Single. Time. ❤️</div>
+    </div>
+  </section>
+
+  <footer>24 HOURS OF US · HOUR 06</footer>
+</div>
+</div>
+<script>
+const button=document.getElementById('reveal');
+const story=document.getElementById('story');
+const final=document.getElementById('final');
+button.addEventListener('click',()=>{
+  button.style.display='none';
+  story.style.display='block';
+  setTimeout(()=>final.style.display='block',5200);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hour 17 — A Letter of Promises</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Parisienne&display=swap');
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at top,#fff8f2 0,#f8e9e4 45%,#ead1d1 100%);color:#4b2630;font-family:'Cormorant Garamond',Georgia,serif}
+.page{max-width:850px;margin:auto;padding:28px 18px 70px}
+.top{text-align:center;min-height:72vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.hour{font-size:14px;letter-spacing:4px;text-transform:uppercase;opacity:.7}
+.envelope{font-size:58px;margin:22px 0 8px;filter:drop-shadow(0 8px 12px #9a5a6a33)}
+h1{font-size:clamp(42px,8vw,76px);font-weight:500;line-height:.95;margin:8px 0 18px}
+.subtitle{font-family:Parisienne,cursive;font-size:28px;margin:0;opacity:.82}
+.open{margin-top:34px;padding:13px 25px;border:1px solid #8f5664;border-radius:999px;background:#fffaf6;color:#5b2b36;font:600 14px Georgia;letter-spacing:2px;cursor:pointer;box-shadow:0 8px 25px #6e3c4a22}
+.open:hover{transform:translateY(-2px)}
+.letter{background:#fffdf8;border:1px solid #dfc8b8;border-radius:4px;padding:clamp(28px,6vw,65px);box-shadow:0 20px 60px #623a4020;position:relative}
+.letter:before{content:"";position:absolute;inset:10px;border:1px dashed #d7b8ad;pointer-events:none}
+.para,.promise{position:relative;font-size:clamp(19px,2.6vw,23px);line-height:1.55;margin:0 0 20px}
+.promise{font-weight:700;font-size:clamp(23px,3.4vw,31px);color:#752f40;margin-top:30px}
+.letter .para:first-child,.letter .promise:first-child{font-family:Parisienne,cursive;font-size:42px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;margin:30px 0 42px}
+figure{margin:0;background:#fff;border:9px solid #fff;box-shadow:0 12px 28px #4c293222;transform:rotate(-1deg);padding-bottom:5px}
+figure:nth-child(2){transform:rotate(1.2deg)}
+figure img{display:block;width:100%;height:auto;max-height:600px;object-fit:contain;background:#f8f2ee}
+.quiet{text-align:center;padding:65px 20px;font-size:clamp(23px,4vw,34px);line-height:1.35}
+.quiet strong{display:block;color:#6f2b3d}
+.promise-mark{font-family:Parisienne,cursive;font-size:36px;margin-top:30px}
+.back{display:block;text-align:center;margin-top:24px;color:#6f3a47;text-decoration:none}
+.petals{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:-1}
+.petal{position:absolute;font-size:18px;opacity:.25;animation:fall linear infinite}
+@keyframes fall{from{transform:translateY(-10vh) rotate(0)}to{transform:translateY(110vh) rotate(360deg)}}
+@media(max-width:600px){.top{min-height:65vh}.letter{padding:30px 22px}.letter:before{inset:6px}.gallery{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="petals">
+<span class="petal" style="left:8%;animation-duration:12s;animation-delay:-3s">♡</span>
+<span class="petal" style="left:28%;animation-duration:16s;animation-delay:-8s">✦</span>
+<span class="petal" style="left:54%;animation-duration:13s;animation-delay:-5s">♡</span>
+<span class="petal" style="left:77%;animation-duration:18s;animation-delay:-11s">✦</span>
+<span class="petal" style="left:91%;animation-duration:15s;animation-delay:-7s">♡</span>
+</div>
+<main class="page">
+<section class="top">
+<div class="hour">17 / 24</div>
+<div class="envelope">✉️</div>
+<h1>A Letter of Promises</h1>
+<p class="subtitle">A promise I want you to keep.</p>
+<button class="open" onclick="document.getElementById('letter').scrollIntoView({behavior:'smooth'})">OPEN LETTER</button>
+</section>
+<div id="letter">
+<section class="gallery"><figure><img src="IMG_8753(1).jpeg" alt="A memory of Kashu"></figure><figure><img src="IMG_8599(3).jpeg" alt="A memory of Kashu"></figure></section>
+<section class="letter">
+<p class="promise">My Letter of Promises</p><p class="para">Babe,</p><p class="para">If I could promise you only a few things in this life, these would be them.</p><p class="promise">I promise to stay.</p><p class="para">I promise to be there for you for as long as I can, through the good days and the difficult ones.</p><p class="promise">I promise to keep becoming better for you.</p><p class="para">Not because you expect me to be perfect, but because loving you makes me want to become a better version of myself.</p><p class="promise">I promise to be better with you.</p><p class="para">To listen more. To understand you better. To communicate better. To never stop learning how to love you.</p><p class="promise">I promise to make you laugh. 😂❤️</p><p class="para">Even on the days when you don&#x27;t feel like smiling, I&#x27;ll do my best to bring that smile back.</p><p class="promise">I promise to look out for you.</p><p class="para">To stand beside you. To support you. To remind you that you never have to face everything alone.</p><p class="promise">I promise to work hard.</p><p class="para">For myself. For my dreams. And for the life I hope we can build together.</p><p class="para">But there&#x27;s one promise that&#x27;s even more important.</p><p class="promise">I promise that I will always want you to become the strongest, happiest and best version of yourself.</p><p class="para">I don&#x27;t want you to become someone else. I want you to become more of you.</p><p class="para">Chase your dreams. Believe in yourself. Grow. Become everything you&#x27;ve ever wanted to be.</p><p class="para">And if you ever feel like you&#x27;re not strong enough, I&#x27;ll remind you of the girl I see.</p><p class="promise">A girl who is capable of so much more than she sometimes believes.</p><p class="para">I don&#x27;t know exactly what the future has waiting for us. But I know what I want.</p><p class="promise">I want to be there.</p><p class="para">I want more mornings with you. More stupid fights. 😂 More random food dates. More movies. More travelling. More pictures. More hugs. More memories. More us.</p><p class="promise">And as long as life lets me, I want to keep choosing you.</p><p class="promise">Today. Tomorrow. And every day I get the chance. ❤️</p><p class="para">Always yours,<br>Ayush</p>
+</section>
+
+        <section class="quiet">
+          <p>I don't promise you a perfect life.</p>
+          <strong>I promise I'll keep trying to make it a beautiful one with you. ❤️</strong>
+          <div class="promise-mark">Promise? 🤝❤️</div>
+        </section>
+        
+</div>
+<a class="back" href="../">← Back to Hour 17</a>
+</main>
+</body>
+</html>
